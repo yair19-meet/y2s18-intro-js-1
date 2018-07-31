@@ -17,7 +17,20 @@ function getRandomInt(min, max) {
 var randomInt = getRandomInt(1, 100);
 /* END STARTING CODE */
 
-// your code goes under here
+var guessNum = prompt("Guess a number between 1 - 100: ");
+var count = 0;
+while (guessNum != randomInt) {
+	count++;
+	if (guessNum > randomInt) {
+		alert("Your quess is too big.. try again: ")
+	}
+	else {
+		alert("Your quess is too small.. try again: ")
+	}
+	guessNum = prompt("");
+}
+document.write("Congradulations, you guessed right! it took you " + count + " guesses.")
+
 
     </script>
 </body>
