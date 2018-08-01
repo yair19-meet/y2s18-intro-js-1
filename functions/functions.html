@@ -17,6 +17,23 @@ function isLetter(char) {
 
 // Write your isPalindrome function here!
 
+function isPalindrome(word) {
+	var arr = [];
+	arr = word.split("");
+	arr = arr.reverse();
+	arr = arr.join("");
+	
+	if (arr == word) {
+		document.write(":)");
+	}	
+	else {
+		document.write(":(");
+	}
+}
+
+var word = prompt("insert a word: ");
+isPalindrome(word);
+
     </script>
 </body>
 
