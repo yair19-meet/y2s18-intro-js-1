@@ -18,16 +18,35 @@ function isLetter(char) {
 // Write your isPalindrome function here!
 
 function isPalindrome(word) {
+
 	var arr = [];
 	arr = word.split("");
 	arr = arr.reverse();
+
+	 // word = word.split();
 	arr = arr.join("");
+
+	// for (var i = word.length - 1; i >= 0; i--) {
+	// 	if (!(isLetter(word[i]))) {
+	// 		word.split(i, 1);
+	// 		arr.split(i, 1);
+	// 		document.write("dawe");
+	// 	}
+	// }
 	
 	if (arr == word) {
 		document.write(":)");
+		document.write("<br>")
+		document.write(word);
+		document.write("<br>")
+		document.write(arr);
 	}	
 	else {
 		document.write(":(");
+		document.write("<br>")
+		document.write(word);
+		document.write("<br>")
+		document.write(arr);
 	}
 }
 
